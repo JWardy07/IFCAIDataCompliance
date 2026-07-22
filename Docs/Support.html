@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IFC AI Data Compliance Support</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+      margin: 0;
+      color: #101624;
+      background: #f7f9fc;
+    }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 22px 64px;
+    }
+
+    h1, h2 {
+      line-height: 1.2;
+      color: #071225;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.2rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 2rem;
+    }
+
+    p, li {
+      font-size: 1rem;
+    }
+
+    code {
+      background: #edf1f8;
+      padding: 0.1rem 0.28rem;
+      border-radius: 4px;
+    }
+
+    .note {
+      border-left: 4px solid #2867ff;
+      padding-left: 1rem;
+      color: #26354f;
+    }
+  </style>
+</head>
+<body>
+<main>
+  <h1>IFC AI Data Compliance Support</h1>
+
+  <p>
+    IFC AI Data Compliance helps reviewers import EIR/DEIR requirement
+    workbooks, review controlled mappings, assess supported IFC STEP models
+    deterministically, and package evidence for handover review.
+  </p>
+
+  <h2>Supported Platforms</h2>
+  <ul>
+    <li>iPhone and iPad running iOS/iPadOS 18 or later.</li>
+    <li>Native macOS running macOS 15 or later.</li>
+  </ul>
+
+  <h2>Supported Inputs</h2>
+  <ul>
+    <li>EIR/DEIR requirement registers in <code>.xlsx</code> workbooks.</li>
+    <li>IFC STEP text models in <code>.ifc</code> format.</li>
+    <li>IFC schema handling is limited to IFC2X3 and IFC4.</li>
+  </ul>
+
+  <h2>Workflow</h2>
+  <ul>
+    <li>
+      Import a workbook and review sheet, header, and column mapping before
+      committing requirements.
+    </li>
+    <li>
+      Import an IFC model and retain local source fingerprints for provenance.
+    </li>
+    <li>
+      Review requirement-to-IFC mappings before deterministic assessment.
+    </li>
+    <li>
+      Export authoritative JSON, CSV, Markdown, PDF, and reviewer ZIP packages.
+    </li>
+  </ul>
+
+  <h2>Apple AI Reviewer</h2>
+
+  <p>
+    The optional Apple AI Reviewer uses on-device Apple Foundation Models where
+    available. AI text is advisory and must be explicitly approved before it is
+    included in exports or reviewer packages. Deterministic assessment results
+    remain authoritative.
+  </p>
+
+  <h2>Troubleshooting</h2>
+  <ul>
+    <li>
+      If a workbook will not import, confirm it is an unlocked
+      <code>.xlsx</code> file and review the column-mapping warnings.
+    </li>
+    <li>
+      If an IFC model is rejected, confirm it is IFC STEP text and uses a
+      supported IFC2X3 or IFC4 schema.
+    </li>
+    <li>
+      If Apple AI Reviewer is unavailable, check device eligibility, operating
+      system support, Apple Intelligence settings, and purchase status.
+    </li>
+    <li>
+      If package creation fails, try clearing the current imported session and
+      reimporting the user-selected source files.
+    </li>
+  </ul>
+
+  <h2>Contact</h2>
+
+  <p class="note">
+    For support, visit
+    <a href="https://example.com/ifc-ai-data-compliance/support">
+      https://example.com/ifc-ai-data-compliance/support
+    </a>
+    or email
+    <a href="mailto:support@example.com">support@example.com</a>.
+  </p>
+</main>
+</body>
+</html>
