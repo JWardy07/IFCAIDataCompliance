@@ -1,14 +1,14 @@
 ISO-10303-21;
 HEADER;
 FILE_DESCRIPTION(('ViewDefinition [CoordinationView_V2.0]'),'2;1');
-FILE_NAME('DemoModel.ifc','2026-02-11T00:00:00',('IFC Viewer'),('IFC Viewer'),'IFC Viewer','IFC Viewer','');
+FILE_NAME('DemoModel.ifc','2026-07-28T00:00:00',('Jamie Ward'),('JWardy07'),'IFC AI Data Compliance Demo','IFC AI Data Compliance','');
 FILE_SCHEMA(('IFC2X3'));
 ENDSEC;
 DATA;
-#1=IFCPERSON($,'Viewer','Demo',$,$,$,$,$);
-#2=IFCORGANIZATION($,'IFC Viewer',$,$,$);
+#1=IFCPERSON($,'Ward','Jamie',$,$,$,$,$);
+#2=IFCORGANIZATION($,'JWardy07',$,$,$);
 #3=IFCPERSONANDORGANIZATION(#1,#2,$);
-#4=IFCAPPLICATION(#2,'1.0','IFC Viewer','IFCViewer');
+#4=IFCAPPLICATION(#2,'1.0','IFC AI Data Compliance','IFCAIDataCompliance');
 #5=IFCOWNERHISTORY(#3,#4,$,.ADDED.,$,$,$,1700000000);
 #6=IFCAXIS2PLACEMENT3D(#7,#8,#9);
 #7=IFCCARTESIANPOINT((0.,0.,0.));
